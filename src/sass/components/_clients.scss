@@ -1,0 +1,31 @@
+
+    .clients{
+        background: #B6B6B6;
+        height: 280px;
+        
+        .container{
+            padding-top: 30px;
+            
+            h2{
+                margin: 0;
+                padding: 0;
+                font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+            ul{
+                margin: 0;
+                margin-top: 40px;
+                padding: 0;
+                
+                li{
+                    display: inline;
+                    float: left;
+                    list-style-type: none;
+                    margin-left: 50px;
+                    
+                }
+            }
+        }
+    }
+    

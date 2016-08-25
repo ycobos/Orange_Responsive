@@ -1,0 +1,15 @@
+
+@mixin estilo-lista($borderColor, $fontFam, $horPadding){
+    border-right: 1px solid $borderColor;
+    display: inline;
+    font-family: $fontFam;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 $horPadding;
+}
+
+@mixin estilo-lista-a($textColor, $fontSize){
+        color: $textColor;
+        font-size: $fontSize;
+        text-decoration: none;
+}

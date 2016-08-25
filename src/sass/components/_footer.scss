@@ -1,0 +1,91 @@
+
+    
+    footer{
+        background: #2A2E39;
+        height: 114px;
+        
+        .container{
+            
+            h2{
+                display: none;
+            }
+            
+            .left{
+                float: left;
+                padding-top: 30px;
+                
+                p{
+                    color: #A7A7A7;
+                    font-size: 16px;
+                }
+                
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    
+                    li{
+                        @include estilo-lista(#FFF, 'brandon', 10px);
+                        //font-family: 'brandon';  //Font family antes del border para que el tamaño quede
+                        //border-right: 1px solid #FFF;
+                        //display: inline;
+                        //list-style-type: none;
+                        //margin: 0;
+                        //padding: 0 10px;
+                        
+                        a{
+                            @include estilo-lista-a($orange-bg, 16px);
+                            //color: $orange-bg;
+                            //font-size: 16px;
+                            //text-decoration: none;
+                        }  
+                        
+                        a:hover{
+                            text-decoration: underline; 
+                        }
+                        
+                        ul{
+                            display: none;
+                        }
+                    } 
+                    
+                    li:first-child{
+                        padding-left : 0;
+                    }
+                    
+                    li:last-child{
+                        border-right: none;
+                    }
+                }
+            }
+            
+            .right{
+                float: right;
+                padding-top: 30px;
+                .icons{
+                    font-family: 'icons';
+                    
+                    a{
+                        text-decoration: none;
+                        
+                        span{
+                            background: #b6b6b6;
+                            border-radius: 50%;
+                            color: #292e39;
+                            display: inline;
+                            font-size: 17px;
+                            line-height: 50px;
+                            padding: 8px;
+                            text-align: center; 
+                            width: 100px;
+                        }
+                    }
+                    
+                    a:hover{
+                        span{
+                            background: $orange-bg;
+                        }
+                    }
+                }
+            }
+        }
+    }

@@ -1,0 +1,67 @@
+header{
+    background: $nav-blueBg;
+    height: 114px;
+    
+    .left{
+        float: left;
+        padding-top: 30px;
+    }
+    
+    .right{
+        float: right;
+        padding-top: 35px;
+    }
+
+    h1{
+        margin: 0;
+        padding: 0;
+        
+        a{
+            background:url(../images/logo.png) no-repeat;
+            display: block;
+            text-indent: -10000px;
+            height: 33px;
+            width: 241px;
+        }
+    }
+    
+    ul{
+        margin: 0;
+        padding: 0;
+        
+        li{
+            @include estilo-lista(#78839f, 'brandon', 17px);
+            //border-right: 1px solid #78839f;
+            //display: inline;
+            //font-family: 'brandon';
+            //list-style-type: none;
+            //margin: 0;
+            //padding: 0 17px;
+            
+            a{
+                @include estilo-lista-a(#FFF, 20px);    
+                //color: #FFF;
+                //font-size: 20px;
+                //text-decoration: none;
+                text-transform: uppercase;
+            }  
+            
+            a:hover{
+                color: $orange-bg; 
+            }
+            
+            ul{
+                display: none;
+            }
+        } 
+        
+        li:last-child{
+            border-right: none;
+        }
+    }
+
+    nav h2{
+        display: none;
+    }
+}    
+

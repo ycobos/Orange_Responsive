@@ -1,0 +1,33 @@
+.spotlight{
+    height: 400px;
+    background:url(../images/banner.jpg) no-repeat center;
+    margin: 0 auto;
+    font-family: 'Open Sans', sans-serif;
+    
+    .container{
+        position: relative;
+        
+        h2{
+            display: none;
+        }
+        
+        p{
+            background: rgba(235, 108, 76, 0.8);
+            color: #fff;
+            font-size: 42px;
+            line-height: 70px;
+            margin: 0;
+            padding: 10px 20px;
+            text-transform: uppercase;
+        }
+    
+        div{
+            position: absolute;
+            left: 0;
+            top: 127px;
+            width: 470px;
+        }
+    }
+}
+
+
